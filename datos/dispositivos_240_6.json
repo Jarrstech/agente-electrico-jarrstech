@@ -1,0 +1,12 @@
+{
+  "_fuente": "NEC 240.6(A) capacidades nominales estandar de fusibles e interruptores automaticos de tiempo inverso",
+  "_ADVERTENCIA": "Verificar contra edicion vigente. No inventar capacidades no estandar sin justificar con 240.6(B)/(C).",
+  "capacidades_estandar_A": [15,20,25,30,35,40,45,50,60,70,80,90,100,110,125,150,175,200,225,250,300,350,400,450,500,600,700,800,1000,1200,1600,2000,2500,3000,4000,5000,6000],
+  "marcos_tipicos_comerciales_A": {
+    "enchufable_1P_2P_3P": [15,20,25,30,35,40,45,50,60,70,80,90,100,110,125],
+    "atornillable_caja_moldeada": [150,175,200,225,250,300,350,400,500,600,700,800],
+    "electromagnetico_potencia": [800,1000,1200,1600,2000,2500,3000,4000]
+  },
+  "sccr_comunes_kA_simetricos": [10, 14, 18, 22, 25, 35, 42, 65, 100, 200],
+  "_nota_sccr": "El SCCR del equipo debe ser MAYOR O IGUAL a la corriente de cortocircuito disponible en ese punto (NEC 110.9, 110.10, 409.110). Este dato debe venir de un estudio de cortocircuito o del dato de la compania suministradora, NUNCA asumirse."
+}

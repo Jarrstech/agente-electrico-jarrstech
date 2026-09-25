@@ -1,0 +1,30 @@
+{
+  "_fuente": "NEC Articulo 220, Parte III - Metodo estandar de calculo de cargas",
+  "_ADVERTENCIA": "Los factores de demanda dependen del tipo de ocupacion. Verificar el articulo exacto contra la edicion vigente antes de aplicarlos. Si el tipo de ocupacion no encaja limpiamente en una categoria, aplicar 100% y documentar el criterio.",
+  "cargas_continuas": {
+    "regla": "Una carga continua (3 horas o mas) se dimensiona al 125% para el conductor y el dispositivo de proteccion (210.19(A), 210.20(A), 215.2, 215.3).",
+    "factor": 1.25
+  },
+  "alumbrado_general_VA_por_m2": {
+    "_nota": "Valores tipicos de densidad de carga de alumbrado general por tipo de ocupacion (NEC Tabla 220.12 / NOM 220-12). Verificar contra edicion vigente; NEC 2020+ reestructuro esta tabla hacia densidades por unidad de superficie diferentes a ediciones previas.",
+    "_instruccion": "NO usar estos valores sin confirmarlos contra la tabla de la edicion declarada en config/jurisdiccion.yaml."
+  },
+  "factores_demanda_alumbrado_220_42": [
+    {"ocupacion": "unidad_de_vivienda", "tramos": [{"hasta_VA": 3000, "factor": 1.00}, {"hasta_VA": 120000, "factor": 0.35}, {"hasta_VA": null, "factor": 0.25}]},
+    {"ocupacion": "hospital", "tramos": [{"hasta_VA": 50000, "factor": 0.40}, {"hasta_VA": null, "factor": 0.20}]},
+    {"ocupacion": "hotel_motel_sin_cocina", "tramos": [{"hasta_VA": 20000, "factor": 0.50}, {"hasta_VA": 100000, "factor": 0.40}, {"hasta_VA": null, "factor": 0.30}]},
+    {"ocupacion": "almacen_bodega", "tramos": [{"hasta_VA": 12500, "factor": 1.00}, {"hasta_VA": null, "factor": 0.50}]},
+    {"ocupacion": "otros", "tramos": [{"hasta_VA": null, "factor": 1.00}]}
+  ],
+  "receptaculos_no_vivienda_220_44": {
+    "regla": "Se calculan a 180 VA por salida de receptaculo simple o multiple; los primeros 10 kVA al 100% y el remanente al 50%.",
+    "VA_por_salida": 180,
+    "tramos": [{"hasta_VA": 10000, "factor": 1.00}, {"hasta_VA": null, "factor": 0.50}]
+  },
+  "motores_430": {
+    "conductor_motor_individual": "125% de la corriente a plena carga de tabla (430.22), usando las TABLAS 430.248/430.250, NO la placa del motor.",
+    "conductor_varios_motores": "125% del motor mas grande + suma de FLC de los demas (430.24).",
+    "proteccion_corto_circuito_ramal": "Segun Tabla 430.52 - depende del tipo de dispositivo y del tipo de motor. NO asumir 250%.",
+    "_ADVERTENCIA": "Las corrientes a plena carga de las tablas 430.248/430.250 no estan incluidas en este archivo. Solicitarlas o consultarlas en la norma vigente."
+  }
+}

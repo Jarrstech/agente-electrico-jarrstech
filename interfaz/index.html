@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agente eléctrico</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231f5fd1' d='M13 2 4 14h6l-1 8 9-12h-6z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="marca">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+      Agente eléctrico <small>JARRSTECH</small>
+    </div>
+    <div class="proyecto-sel">
+      <label for="sel-proyecto" class="mono" style="font-size:12px;color:var(--texto-3)">Proyecto</label>
+      <select id="sel-proyecto" aria-label="Proyecto"></select>
+      <button class="btn" id="btn-nuevo" type="button">Nuevo</button>
+    </div>
+    <span class="estado-guardado" id="estado-guardado" aria-live="polite"></span>
+    <div class="acciones-barra">
+      <button class="btn" id="btn-carpeta" type="button" title="Abrir la carpeta del proyecto">Carpeta</button>
+      <button class="btn primario" id="btn-calcular" type="button">Calcular</button>
+    </div>
+  </header>
+
+  <div class="cuerpo">
+    <nav class="nav" id="nav" aria-label="Secciones"></nav>
+    <main id="principal" tabindex="-1">
+      <div class="vacio"><span class="cargando"></span> Cargando…</div>
+    </main>
+  </div>
+
+  <dialog id="dlg-nuevo">
+    <form method="dialog" id="form-nuevo">
+      <h2>Nuevo proyecto</h2>
+      <div class="campo">
+        <label for="nuevo-nombre" class="req">Nombre del proyecto</label>
+        <input id="nuevo-nombre" required autocomplete="off" placeholder="p. ej. Nave industrial Querétaro — tablero general">
+      </div>
+      <div class="opciones" role="radiogroup" aria-label="Punto de partida">
+        <label class="opcion"><input type="radio" name="origen" value="vacio" checked>
+          <div><strong>En blanco</strong><span>Capturas todo desde cero.</span></div></label>
+        <label class="opcion"><input type="radio" name="origen" value="demo">
+          <div><strong>Copia del demo</strong><span>Panificadora de ejemplo, para practicar. Todos sus datos son de ejemplo.</span></div></label>
+      </div>
+      <p class="nota">Se crea la carpeta <span class="mono">proyectos/&lt;nombre&gt;/</span> con los archivos que usan los scripts.</p>
+      <div class="pie-dlg">
+        <button class="btn" value="cancelar" formnovalidate>Cancelar</button>
+        <button class="btn primario" value="crear" id="btn-crear">Crear</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="dlg-pegar">
+    <form method="dialog" id="form-pegar">
+      <h2>Pegar cargas desde Excel</h2>
+      <p class="nota" style="margin:0">Copia las celdas en Excel (con o sin fila de encabezados) y pégalas aquí.
+        Si no hay encabezados, el orden de columnas es:
+        <span class="mono">id, descripción, tablero, conexión (1/2/3), tensión, VA, continua (si/no), longitud m</span>.</p>
+      <textarea id="texto-pegar" rows="9" placeholder="C-01&#9;Horno&#9;TD-1&#9;3&#9;480&#9;45000&#9;si&#9;62"></textarea>
+      <div id="vista-pegar" class="ayuda"></div>
+      <div class="pie-dlg">
+        <button class="btn" value="cancelar" formnovalidate>Cancelar</button>
+        <button class="btn primario" value="pegar">Agregar filas</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="errores-js" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>

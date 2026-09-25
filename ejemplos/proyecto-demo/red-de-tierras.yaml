@@ -1,0 +1,45 @@
+# Red de tierras del proyecto demo — todos los valores son datos de ejemplo.
+
+proyecto: "Panificadora Demo - Ampliacion tablero general"
+subestacion: "Subestacion 300 kVA, 13.8 kV (TR-1)"
+
+terreno:
+  resistividad_ohm_m: 50        # dato de ejemplo; en obra se mide con el metodo de Wenner
+  fuente: "Dato de ejemplo"
+
+suministrador:
+  tension_kV: 13.8
+  mva_cc_3f: 525.8              # 22 kA, igual que icc_disponible_kA del unifilar
+  mva_cc_1f: 400                # 16.7 kA
+  x_r: 10
+  frecuencia_Hz: 60
+  fuente: "Dato de ejemplo"
+
+falla:
+  tiempo_choque_s: 0.5
+  tiempo_conductor_s: 0.5
+  factor_division_Sf: 0.2       # dato de ejemplo: requiere estudio de division de corriente
+
+malla:
+  largo_m: 20
+  ancho_m: 15
+  separacion_m: 5
+  profundidad_m: 0.6
+  calibre: "4/0"
+  material: cobre_duro
+  temperatura_ambiente_C: 40
+  temperatura_maxima_C: null
+
+varillas:
+  cantidad: 4
+  longitud_m: 3.05
+  en_perimetro: true
+
+capa_superficial:
+  resistividad_ohm_m: 3000
+  espesor_m: 0.15
+
+persona:
+  peso_kg: 50
+
+resistencia_objetivo_ohm: null

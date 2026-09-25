@@ -1,0 +1,293 @@
+{
+  "marca": "Square D (Schneider Electric)",
+  "advertencia": "Datos de catalogo de referencia. Confirmar numero de catalogo, disponibilidad (Mexico / EE. UU.) y capacidades con el distribuidor o el catalogo vigente de Schneider Electric antes de cotizar. La seleccion usa interruptores totalmente clasificados (sin combinaciones en serie). Los valores marcados en '_verificar' vienen de fuentes secundarias.",
+  "criterios": {
+    "capacidad_interruptiva": "Mayor o igual que la Icc del tablero (bus infinito, ec.py cortocircuito)",
+    "reserva_espacios_pct": 25.0,
+    "arreglo_barras": "Numeracion non-par: circuitos nones a la izquierda y pares a la derecha; renglones 1-2 fase A, 3-4 fase B, 5-6 fase C (NEC 408.3(E))."
+  },
+  "tableros": [
+    {
+      "id": "TG-1",
+      "descripcion": "Tablero general 480V",
+      "sistema": "480Y/277 V 3F-4H",
+      "icc_kA": 7.44,
+      "familia": "I-Line",
+      "motivos_descarte": [
+        "NF: sin interruptor para 225 A 3P"
+      ],
+      "tablero_sugerido": "Square D I-Line: Tablero de distribucion de potencia I-Line (interior HCP)",
+      "barras_minimas_A": 400,
+      "principal": {
+        "descripcion": "PowerPact L, nivel G, disparo electronico MicroLogic, 400 A, 3 polos, 35 kA a 480 V",
+        "amperes": 400,
+        "tipo": "LG",
+        "kA": 35,
+        "catalogo": "LGA36400U31X"
+      },
+      "polos_usados": 9,
+      "espacios_minimos": null,
+      "reserva_pct": 25.0,
+      "sccr_resultante_kA": 18,
+      "sccr_declarado_kA": 65,
+      "envolvente": "[COMPLETAR según ambiente: NEMA 1 interior seco, 3R intemperie, 4X lavado o corrosivo, 12 polvo]",
+      "interruptores": [
+        {
+          "circuito": "TD-1",
+          "descripcion": "Tablero produccion",
+          "polos": 3,
+          "amperes": 225,
+          "posiciones": [],
+          "fases": [],
+          "tipo": "JD",
+          "familia": "PowerPact J, nivel D",
+          "kA": 18,
+          "catalogo": "JDA36225",
+          "nota": ""
+        },
+        {
+          "circuito": "TR-2",
+          "descripcion": "Transformador seco 75 kVA",
+          "polos": 3,
+          "amperes": 125,
+          "posiciones": [],
+          "fases": [],
+          "tipo": "HD",
+          "familia": "PowerPact H, nivel D",
+          "kA": 18,
+          "catalogo": "HDA36125",
+          "nota": ""
+        },
+        {
+          "circuito": "BESS-1",
+          "descripcion": "BESS 100 kWh / 50 kW",
+          "polos": 3,
+          "amperes": 100,
+          "posiciones": [],
+          "fases": [],
+          "tipo": "HD",
+          "familia": "PowerPact H, nivel D",
+          "kA": 18,
+          "catalogo": "HDA36100",
+          "nota": ""
+        }
+      ],
+      "avisos": [
+        "El unifilar declara SCCR de 65 kA; con esta selección el tablero queda en 18 kA (Icc 7.44 kA). Actualizar el unifilar o subir el nivel."
+      ]
+    },
+    {
+      "id": "TD-1",
+      "descripcion": "Tablero produccion",
+      "sistema": "480Y/277 V 3F-4H",
+      "icc_kA": 7.29,
+      "familia": "NF",
+      "motivos_descarte": [],
+      "tablero_sugerido": "Square D NF: Tablero de alumbrado y distribucion NF",
+      "barras_minimas_A": 250,
+      "principal": {
+        "descripcion": "PowerPact J, nivel D, 225 A, 3 polos, 18 kA a 480 V",
+        "amperes": 225,
+        "tipo": "JD",
+        "kA": 18
+      },
+      "polos_usados": 13,
+      "espacios_minimos": 18,
+      "reserva_pct": 25.0,
+      "sccr_resultante_kA": 18,
+      "sccr_declarado_kA": 42,
+      "envolvente": "[COMPLETAR según ambiente: NEMA 1 interior seco, 3R intemperie, 4X lavado o corrosivo, 12 polvo]",
+      "interruptores": [
+        {
+          "circuito": "C-04",
+          "descripcion": "Alumbrado nave LED",
+          "polos": 1,
+          "amperes": 30,
+          "posiciones": [
+            1
+          ],
+          "fases": [
+            "A"
+          ],
+          "tipo": "EDB",
+          "familia": "Marco E 125 A, nivel D",
+          "kA": 18,
+          "catalogo": "EDB14030",
+          "nota": ""
+        },
+        {
+          "circuito": "C-01",
+          "descripcion": "Horno rotatorio principal",
+          "polos": 3,
+          "amperes": 70,
+          "posiciones": [
+            2,
+            4,
+            6
+          ],
+          "fases": [
+            "A",
+            "B",
+            "C"
+          ],
+          "tipo": "EDB",
+          "familia": "Marco E 125 A, nivel D",
+          "kA": 18,
+          "catalogo": "EDB34070",
+          "nota": ""
+        },
+        {
+          "circuito": "C-02",
+          "descripcion": "Amasadora 15 HP",
+          "polos": 3,
+          "amperes": 20,
+          "posiciones": [
+            3,
+            5,
+            7
+          ],
+          "fases": [
+            "B",
+            "C",
+            "A"
+          ],
+          "tipo": "EDB",
+          "familia": "Marco E 125 A, nivel D",
+          "kA": 18,
+          "catalogo": "EDB34020",
+          "nota": ""
+        },
+        {
+          "circuito": "C-03",
+          "descripcion": "Camara de fermentacion",
+          "polos": 3,
+          "amperes": 15,
+          "posiciones": [
+            8,
+            10,
+            12
+          ],
+          "fases": [
+            "A",
+            "B",
+            "C"
+          ],
+          "tipo": "EDB",
+          "familia": "Marco E 125 A, nivel D",
+          "kA": 18,
+          "catalogo": "EDB34015",
+          "nota": ""
+        },
+        {
+          "circuito": "C-06",
+          "descripcion": "Compresor de aire 10 HP",
+          "polos": 3,
+          "amperes": 15,
+          "posiciones": [
+            9,
+            11,
+            13
+          ],
+          "fases": [
+            "B",
+            "C",
+            "A"
+          ],
+          "tipo": "EDB",
+          "familia": "Marco E 125 A, nivel D",
+          "kA": 18,
+          "catalogo": "EDB34015",
+          "nota": ""
+        }
+      ],
+      "avisos": [
+        "Circuitos tomados del cuadro de cargas; del unifilar solo los alimentadores a equipo de distribución (se omiten cargas repetidas).",
+        "El unifilar declara SCCR de 42 kA; con esta selección el tablero queda en 18 kA (Icc 7.29 kA). Actualizar el unifilar o subir el nivel."
+      ]
+    },
+    {
+      "id": "TD-2",
+      "descripcion": "Tablero servicios 208/120V",
+      "sistema": "208Y/120 V 3F-4H",
+      "icc_kA": 4.35,
+      "familia": "NQ",
+      "motivos_descarte": [],
+      "tablero_sugerido": "Square D NQ: Tablero de alumbrado y distribucion NQ",
+      "barras_minimas_A": 225,
+      "principal": {
+        "descripcion": "Interruptor principal NQ de 225 A",
+        "amperes": 225,
+        "nota": ""
+      },
+      "polos_usados": 6,
+      "espacios_minimos": 8,
+      "reserva_pct": 25.0,
+      "sccr_resultante_kA": 10,
+      "sccr_declarado_kA": 22,
+      "envolvente": "[COMPLETAR según ambiente: NEMA 1 interior seco, 3R intemperie, 4X lavado o corrosivo, 12 polvo]",
+      "interruptores": [
+        {
+          "circuito": "C-07",
+          "descripcion": "Cargador VE nivel 2",
+          "polos": 2,
+          "amperes": 70,
+          "posiciones": [
+            2,
+            4
+          ],
+          "fases": [
+            "A",
+            "B"
+          ],
+          "tipo": "QOB",
+          "familia": "QO atornillable (bolt-on)",
+          "kA": 10,
+          "catalogo": "QOB270",
+          "nota": "verificar rango de amperes con el distribuidor"
+        },
+        {
+          "circuito": "C-05",
+          "descripcion": "Contactos generales area produccion",
+          "polos": 2,
+          "amperes": 30,
+          "posiciones": [
+            3,
+            5
+          ],
+          "fases": [
+            "B",
+            "C"
+          ],
+          "tipo": "QOB",
+          "familia": "QO atornillable (bolt-on)",
+          "kA": 10,
+          "catalogo": "QOB230",
+          "nota": "verificar rango de amperes con el distribuidor"
+        },
+        {
+          "circuito": "C-08",
+          "descripcion": "Aire acondicionado oficinas",
+          "polos": 2,
+          "amperes": 45,
+          "posiciones": [
+            6,
+            8
+          ],
+          "fases": [
+            "C",
+            "A"
+          ],
+          "tipo": "QOB",
+          "familia": "QO atornillable (bolt-on)",
+          "kA": 10,
+          "catalogo": "QOB245",
+          "nota": "verificar rango de amperes con el distribuidor"
+        }
+      ],
+      "avisos": [
+        "Circuitos tomados del cuadro de cargas; del unifilar solo los alimentadores a equipo de distribución (se omiten cargas repetidas).",
+        "El unifilar declara SCCR de 22 kA; con esta selección el tablero queda en 10 kA (Icc 4.35 kA). Actualizar el unifilar o subir el nivel."
+      ]
+    }
+  ]
+}

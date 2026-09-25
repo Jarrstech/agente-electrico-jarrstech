@@ -1,0 +1,32 @@
+{
+  "_fuente": "NEC 310.15(B)(1) correccion por temperatura ambiente y 310.15(C)(1) ajuste por numero de conductores portadores de corriente",
+  "_ADVERTENCIA": "Verificar contra edicion vigente. Ambas correcciones se aplican de forma MULTIPLICATIVA sobre la ampacidad de tabla.",
+  "correccion_temperatura_base_30C": [
+    {"amb_min": -100, "amb_max": 10, "f60": 1.29, "f75": 1.20, "f90": 1.15},
+    {"amb_min": 11,  "amb_max": 15, "f60": 1.22, "f75": 1.15, "f90": 1.12},
+    {"amb_min": 16,  "amb_max": 20, "f60": 1.15, "f75": 1.11, "f90": 1.08},
+    {"amb_min": 21,  "amb_max": 25, "f60": 1.08, "f75": 1.05, "f90": 1.04},
+    {"amb_min": 26,  "amb_max": 30, "f60": 1.00, "f75": 1.00, "f90": 1.00},
+    {"amb_min": 31,  "amb_max": 35, "f60": 0.91, "f75": 0.94, "f90": 0.96},
+    {"amb_min": 36,  "amb_max": 40, "f60": 0.82, "f75": 0.88, "f90": 0.91},
+    {"amb_min": 41,  "amb_max": 45, "f60": 0.71, "f75": 0.82, "f90": 0.87},
+    {"amb_min": 46,  "amb_max": 50, "f60": 0.58, "f75": 0.75, "f90": 0.82},
+    {"amb_min": 51,  "amb_max": 55, "f60": 0.41, "f75": 0.67, "f90": 0.76},
+    {"amb_min": 56,  "amb_max": 60, "f60": null, "f75": 0.58, "f90": 0.71},
+    {"amb_min": 61,  "amb_max": 65, "f60": null, "f75": 0.47, "f90": 0.65},
+    {"amb_min": 66,  "amb_max": 70, "f60": null, "f75": 0.33, "f90": 0.58},
+    {"amb_min": 71,  "amb_max": 75, "f60": null, "f75": null, "f90": 0.50},
+    {"amb_min": 76,  "amb_max": 80, "f60": null, "f75": null, "f90": 0.41},
+    {"amb_min": 81,  "amb_max": 85, "f60": null, "f75": null, "f90": 0.29}
+  ],
+  "ajuste_numero_conductores": [
+    {"min": 1, "max": 3,  "factor": 1.00},
+    {"min": 4, "max": 6,  "factor": 0.80},
+    {"min": 7, "max": 9,  "factor": 0.70},
+    {"min": 10, "max": 20, "factor": 0.50},
+    {"min": 21, "max": 30, "factor": 0.45},
+    {"min": 31, "max": 40, "factor": 0.40},
+    {"min": 41, "max": 9999, "factor": 0.35}
+  ],
+  "_nota_neutro": "El neutro se cuenta como conductor portador de corriente cuando el sistema alimenta cargas no lineales significativas (3F-4H con armonicas) o en sistemas monofasicos de 3 hilos donde lleva corriente desbalanceada. Ver 310.15(E)."
+}

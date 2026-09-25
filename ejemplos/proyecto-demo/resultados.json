@@ -1,0 +1,673 @@
+{
+  "circuitos": [
+    {
+      "id": "C-01",
+      "nombre": "Horno rotatorio principal",
+      "tablero": "TD-1",
+      "va": 45000.0,
+      "tension_V": 480.0,
+      "fases": 3,
+      "polos": 3,
+      "conexion": "trifasica",
+      "continua": true,
+      "corriente_carga_A": 54.1,
+      "corriente_diseno_A": 67.7,
+      "conductor": {
+        "calibre": "4",
+        "material": "cobre",
+        "conductores_por_fase": 1,
+        "ampacidad_tabla_A": 95,
+        "temp_aislamiento_C": 90,
+        "factor_temperatura": 1.0,
+        "factor_agrupamiento": 1.0,
+        "ampacidad_corregida_A": 95.0,
+        "ampacidad_limitada_terminal_A": 85,
+        "temp_terminal_C": 75,
+        "ampacidad_utilizable_A": 85,
+        "corriente_diseno_A": 67.7,
+        "regla_gobernante": "110.14(C) terminal"
+      },
+      "proteccion": {
+        "corriente_carga_A": 54.1,
+        "carga_continua": true,
+        "corriente_minima_dispositivo_A": 67.7,
+        "capacidad_nominal_A": 70,
+        "nota_240_4_B": "Si esta capacidad excede la ampacidad del conductor, verificar que aplique la regla del siguiente tamano superior (240.4(B)) y que no sea un circuito derivado multisalida."
+      },
+      "egc": {
+        "ocpd_A": 70,
+        "fila_tabla_A": 100,
+        "egc_calibre": "8",
+        "material": "cobre",
+        "nota_250_122_B": "Si los conductores de fase se aumentaron de calibre (p.ej. por caida de tension), el EGC debe aumentarse proporcionalmente al area de la seccion transversal."
+      },
+      "caida_tension": {
+        "calibre": "4",
+        "material": "cobre",
+        "longitud_m": 62.0,
+        "corriente_A": 54.12658773652742,
+        "resistencia_ohm": 0.06262,
+        "caida_V": 5.87,
+        "caida_pct": 1.22,
+        "limite_recomendado_pct": 3.0
+      },
+      "calibre_final": "4"
+    },
+    {
+      "id": "C-02",
+      "nombre": "Amasadora 15 HP",
+      "tablero": "TD-1",
+      "va": 14000.0,
+      "tension_V": 480.0,
+      "fases": 3,
+      "polos": 3,
+      "conexion": "trifasica",
+      "continua": false,
+      "corriente_carga_A": 16.8,
+      "corriente_diseno_A": 16.8,
+      "conductor": {
+        "calibre": "12",
+        "material": "cobre",
+        "conductores_por_fase": 1,
+        "ampacidad_tabla_A": 30,
+        "temp_aislamiento_C": 90,
+        "factor_temperatura": 1.0,
+        "factor_agrupamiento": 1.0,
+        "ampacidad_corregida_A": 30.0,
+        "ampacidad_limitada_terminal_A": 20,
+        "temp_terminal_C": 75,
+        "ampacidad_utilizable_A": 20,
+        "corriente_diseno_A": 16.8,
+        "regla_gobernante": "110.14(C) terminal"
+      },
+      "proteccion": {
+        "corriente_carga_A": 16.8,
+        "carga_continua": false,
+        "corriente_minima_dispositivo_A": 16.8,
+        "capacidad_nominal_A": 20,
+        "nota_240_4_B": "Si esta capacidad excede la ampacidad del conductor, verificar que aplique la regla del siguiente tamano superior (240.4(B)) y que no sea un circuito derivado multisalida."
+      },
+      "egc": {
+        "ocpd_A": 20,
+        "fila_tabla_A": 20,
+        "egc_calibre": "12",
+        "material": "cobre",
+        "nota_250_122_B": "Si los conductores de fase se aumentaron de calibre (p.ej. por caida de tension), el EGC debe aumentarse proporcionalmente al area de la seccion transversal."
+      },
+      "caida_tension": {
+        "calibre": "12",
+        "material": "cobre",
+        "longitud_m": 38.0,
+        "corriente_A": 16.839382851364086,
+        "resistencia_ohm": 0.247,
+        "caida_V": 7.2,
+        "caida_pct": 1.5,
+        "limite_recomendado_pct": 3.0
+      },
+      "calibre_final": "12"
+    },
+    {
+      "id": "C-03",
+      "nombre": "Camara de fermentacion",
+      "tablero": "TD-1",
+      "va": 9000.0,
+      "tension_V": 480.0,
+      "fases": 3,
+      "polos": 3,
+      "conexion": "trifasica",
+      "continua": true,
+      "corriente_carga_A": 10.8,
+      "corriente_diseno_A": 13.5,
+      "conductor": {
+        "calibre": "14",
+        "material": "cobre",
+        "conductores_por_fase": 1,
+        "ampacidad_tabla_A": 25,
+        "temp_aislamiento_C": 90,
+        "factor_temperatura": 1.0,
+        "factor_agrupamiento": 1.0,
+        "ampacidad_corregida_A": 25.0,
+        "ampacidad_limitada_terminal_A": 15,
+        "temp_terminal_C": 75,
+        "ampacidad_utilizable_A": 15,
+        "corriente_diseno_A": 13.5,
+        "regla_gobernante": "110.14(C) terminal"
+      },
+      "proteccion": {
+        "corriente_carga_A": 10.8,
+        "carga_continua": true,
+        "corriente_minima_dispositivo_A": 13.5,
+        "capacidad_nominal_A": 15,
+        "nota_240_4_B": "Si esta capacidad excede la ampacidad del conductor, verificar que aplique la regla del siguiente tamano superior (240.4(B)) y que no sea un circuito derivado multisalida."
+      },
+      "egc": {
+        "ocpd_A": 15,
+        "fila_tabla_A": 15,
+        "egc_calibre": "14",
+        "material": "cobre",
+        "nota_250_122_B": "Si los conductores de fase se aumentaron de calibre (p.ej. por caida de tension), el EGC debe aumentarse proporcionalmente al area de la seccion transversal."
+      },
+      "caida_tension": {
+        "calibre": "14",
+        "material": "cobre",
+        "longitud_m": 25.0,
+        "corriente_A": 10.825317547305485,
+        "resistencia_ohm": 0.2575,
+        "caida_V": 4.83,
+        "caida_pct": 1.01,
+        "limite_recomendado_pct": 3.0
+      },
+      "calibre_final": "14"
+    },
+    {
+      "id": "C-04",
+      "nombre": "Alumbrado nave LED",
+      "tablero": "TD-1",
+      "va": 6200.0,
+      "tension_V": 277.0,
+      "fases": 1,
+      "polos": 1,
+      "conexion": "fase-neutro",
+      "continua": true,
+      "corriente_carga_A": 22.4,
+      "corriente_diseno_A": 28.0,
+      "conductor": {
+        "calibre": "10",
+        "material": "cobre",
+        "conductores_por_fase": 1,
+        "ampacidad_tabla_A": 40,
+        "temp_aislamiento_C": 90,
+        "factor_temperatura": 1.0,
+        "factor_agrupamiento": 1.0,
+        "ampacidad_corregida_A": 40.0,
+        "ampacidad_limitada_terminal_A": 30,
+        "temp_terminal_C": 75,
+        "ampacidad_utilizable_A": 30,
+        "corriente_diseno_A": 28.0,
+        "regla_gobernante": "110.14(C) terminal"
+      },
+      "proteccion": {
+        "corriente_carga_A": 22.4,
+        "carga_continua": true,
+        "corriente_minima_dispositivo_A": 28.0,
+        "capacidad_nominal_A": 30,
+        "nota_240_4_B": "Si esta capacidad excede la ampacidad del conductor, verificar que aplique la regla del siguiente tamano superior (240.4(B)) y que no sea un circuito derivado multisalida."
+      },
+      "egc": {
+        "ocpd_A": 30,
+        "fila_tabla_A": 60,
+        "egc_calibre": "10",
+        "material": "cobre",
+        "nota_250_122_B": "Si los conductores de fase se aumentaron de calibre (p.ej. por caida de tension), el EGC debe aumentarse proporcionalmente al area de la seccion transversal."
+      },
+      "caida_tension": {
+        "calibre": "10",
+        "material": "cobre",
+        "longitud_m": 95.0,
+        "corriente_A": 22.382671480144403,
+        "resistencia_ohm": 0.38665,
+        "caida_V": 17.31,
+        "caida_pct": 6.25,
+        "limite_recomendado_pct": 3.0,
+        "excede_limite": true
+      },
+      "calibre_por_caida": {
+        "calibre": "6",
+        "material": "cobre",
+        "longitud_m": 95.0,
+        "corriente_A": 22.382671480144403,
+        "resistencia_ohm": 0.15295,
+        "caida_V": 6.85,
+        "caida_pct": 2.47,
+        "limite_recomendado_pct": 3.0
+      },
+      "calibre_final": "6",
+      "alerta": "Caida 6.25% > 3.0%. Se aumenta a 6 (2.47%). Aplicar 250.122(B): aumentar el EGC proporcionalmente."
+    },
+    {
+      "id": "C-05",
+      "nombre": "Contactos generales area produccion",
+      "tablero": "TD-2",
+      "va": 5400.0,
+      "tension_V": 208.0,
+      "fases": 2,
+      "polos": 2,
+      "conexion": "fase-fase",
+      "continua": false,
+      "corriente_carga_A": 26.0,
+      "corriente_diseno_A": 26.0,
+      "conductor": {
+        "calibre": "10",
+        "material": "cobre",
+        "conductores_por_fase": 1,
+        "ampacidad_tabla_A": 40,
+        "temp_aislamiento_C": 90,
+        "factor_temperatura": 1.0,
+        "factor_agrupamiento": 0.8,
+        "ampacidad_corregida_A": 32.0,
+        "ampacidad_limitada_terminal_A": 30,
+        "temp_terminal_C": 75,
+        "ampacidad_utilizable_A": 30,
+        "corriente_diseno_A": 26.0,
+        "regla_gobernante": "110.14(C) terminal"
+      },
+      "proteccion": {
+        "corriente_carga_A": 26.0,
+        "carga_continua": false,
+        "corriente_minima_dispositivo_A": 26.0,
+        "capacidad_nominal_A": 30,
+        "nota_240_4_B": "Si esta capacidad excede la ampacidad del conductor, verificar que aplique la regla del siguiente tamano superior (240.4(B)) y que no sea un circuito derivado multisalida."
+      },
+      "egc": {
+        "ocpd_A": 30,
+        "fila_tabla_A": 60,
+        "egc_calibre": "10",
+        "material": "cobre",
+        "nota_250_122_B": "Si los conductores de fase se aumentaron de calibre (p.ej. por caida de tension), el EGC debe aumentarse proporcionalmente al area de la seccion transversal."
+      },
+      "caida_tension": {
+        "calibre": "10",
+        "material": "cobre",
+        "longitud_m": 45.0,
+        "corriente_A": 25.96153846153846,
+        "resistencia_ohm": 0.18315,
+        "caida_V": 9.51,
+        "caida_pct": 4.57,
+        "limite_recomendado_pct": 3.0,
+        "excede_limite": true
+      },
+      "calibre_por_caida": {
+        "calibre": "8",
+        "material": "cobre",
+        "longitud_m": 45.0,
+        "corriente_A": 25.96153846153846,
+        "resistencia_ohm": 0.11475,
+        "caida_V": 5.96,
+        "caida_pct": 2.86,
+        "limite_recomendado_pct": 3.0
+      },
+      "calibre_final": "8",
+      "alerta": "Caida 4.57% > 3.0%. Se aumenta a 8 (2.86%). Aplicar 250.122(B): aumentar el EGC proporcionalmente."
+    },
+    {
+      "id": "C-06",
+      "nombre": "Compresor de aire 10 HP",
+      "tablero": "TD-1",
+      "va": 8500.0,
+      "tension_V": 480.0,
+      "fases": 3,
+      "polos": 3,
+      "conexion": "trifasica",
+      "continua": false,
+      "corriente_carga_A": 10.2,
+      "corriente_diseno_A": 10.2,
+      "conductor": {
+        "calibre": "14",
+        "material": "cobre",
+        "conductores_por_fase": 1,
+        "ampacidad_tabla_A": 25,
+        "temp_aislamiento_C": 90,
+        "factor_temperatura": 1.0,
+        "factor_agrupamiento": 1.0,
+        "ampacidad_corregida_A": 25.0,
+        "ampacidad_limitada_terminal_A": 15,
+        "temp_terminal_C": 75,
+        "ampacidad_utilizable_A": 15,
+        "corriente_diseno_A": 10.2,
+        "regla_gobernante": "110.14(C) terminal"
+      },
+      "proteccion": {
+        "corriente_carga_A": 10.2,
+        "carga_continua": false,
+        "corriente_minima_dispositivo_A": 10.2,
+        "capacidad_nominal_A": 15,
+        "nota_240_4_B": "Si esta capacidad excede la ampacidad del conductor, verificar que aplique la regla del siguiente tamano superior (240.4(B)) y que no sea un circuito derivado multisalida."
+      },
+      "egc": {
+        "ocpd_A": 15,
+        "fila_tabla_A": 15,
+        "egc_calibre": "14",
+        "material": "cobre",
+        "nota_250_122_B": "Si los conductores de fase se aumentaron de calibre (p.ej. por caida de tension), el EGC debe aumentarse proporcionalmente al area de la seccion transversal."
+      },
+      "caida_tension": {
+        "calibre": "14",
+        "material": "cobre",
+        "longitud_m": 55.0,
+        "corriente_A": 10.223911016899624,
+        "resistencia_ohm": 0.5665,
+        "caida_V": 10.03,
+        "caida_pct": 2.09,
+        "limite_recomendado_pct": 3.0
+      },
+      "calibre_final": "14"
+    },
+    {
+      "id": "C-07",
+      "nombre": "Cargador VE nivel 2",
+      "tablero": "TD-2",
+      "va": 11500.0,
+      "tension_V": 208.0,
+      "fases": 2,
+      "polos": 2,
+      "conexion": "fase-fase",
+      "continua": true,
+      "corriente_carga_A": 55.3,
+      "corriente_diseno_A": 69.1,
+      "conductor": {
+        "calibre": "4",
+        "material": "cobre",
+        "conductores_por_fase": 1,
+        "ampacidad_tabla_A": 95,
+        "temp_aislamiento_C": 90,
+        "factor_temperatura": 1.0,
+        "factor_agrupamiento": 1.0,
+        "ampacidad_corregida_A": 95.0,
+        "ampacidad_limitada_terminal_A": 85,
+        "temp_terminal_C": 75,
+        "ampacidad_utilizable_A": 85,
+        "corriente_diseno_A": 69.1,
+        "regla_gobernante": "110.14(C) terminal"
+      },
+      "proteccion": {
+        "corriente_carga_A": 55.3,
+        "carga_continua": true,
+        "corriente_minima_dispositivo_A": 69.1,
+        "capacidad_nominal_A": 70,
+        "nota_240_4_B": "Si esta capacidad excede la ampacidad del conductor, verificar que aplique la regla del siguiente tamano superior (240.4(B)) y que no sea un circuito derivado multisalida."
+      },
+      "egc": {
+        "ocpd_A": 70,
+        "fila_tabla_A": 100,
+        "egc_calibre": "8",
+        "material": "cobre",
+        "nota_250_122_B": "Si los conductores de fase se aumentaron de calibre (p.ej. por caida de tension), el EGC debe aumentarse proporcionalmente al area de la seccion transversal."
+      },
+      "caida_tension": {
+        "calibre": "4",
+        "material": "cobre",
+        "longitud_m": 72.0,
+        "corriente_A": 55.28846153846154,
+        "resistencia_ohm": 0.07272,
+        "caida_V": 8.04,
+        "caida_pct": 3.87,
+        "limite_recomendado_pct": 3.0,
+        "excede_limite": true
+      },
+      "calibre_por_caida": {
+        "calibre": "2",
+        "material": "cobre",
+        "longitud_m": 72.0,
+        "corriente_A": 55.28846153846154,
+        "resistencia_ohm": 0.04579,
+        "caida_V": 5.06,
+        "caida_pct": 2.43,
+        "limite_recomendado_pct": 3.0
+      },
+      "calibre_final": "2",
+      "alerta": "Caida 3.87% > 3.0%. Se aumenta a 2 (2.43%). Aplicar 250.122(B): aumentar el EGC proporcionalmente."
+    },
+    {
+      "id": "C-08",
+      "nombre": "Aire acondicionado oficinas",
+      "tablero": "TD-2",
+      "va": 7200.0,
+      "tension_V": 208.0,
+      "fases": 2,
+      "polos": 2,
+      "conexion": "fase-fase",
+      "continua": true,
+      "corriente_carga_A": 34.6,
+      "corriente_diseno_A": 43.3,
+      "conductor": {
+        "calibre": "8",
+        "material": "cobre",
+        "conductores_por_fase": 1,
+        "ampacidad_tabla_A": 55,
+        "temp_aislamiento_C": 90,
+        "factor_temperatura": 1.0,
+        "factor_agrupamiento": 1.0,
+        "ampacidad_corregida_A": 55.0,
+        "ampacidad_limitada_terminal_A": 50,
+        "temp_terminal_C": 75,
+        "ampacidad_utilizable_A": 50,
+        "corriente_diseno_A": 43.3,
+        "regla_gobernante": "110.14(C) terminal"
+      },
+      "proteccion": {
+        "corriente_carga_A": 34.6,
+        "carga_continua": true,
+        "corriente_minima_dispositivo_A": 43.3,
+        "capacidad_nominal_A": 45,
+        "nota_240_4_B": "Si esta capacidad excede la ampacidad del conductor, verificar que aplique la regla del siguiente tamano superior (240.4(B)) y que no sea un circuito derivado multisalida."
+      },
+      "egc": {
+        "ocpd_A": 45,
+        "fila_tabla_A": 60,
+        "egc_calibre": "10",
+        "material": "cobre",
+        "nota_250_122_B": "Si los conductores de fase se aumentaron de calibre (p.ej. por caida de tension), el EGC debe aumentarse proporcionalmente al area de la seccion transversal."
+      },
+      "caida_tension": {
+        "calibre": "8",
+        "material": "cobre",
+        "longitud_m": 40.0,
+        "corriente_A": 34.61538461538461,
+        "resistencia_ohm": 0.102,
+        "caida_V": 7.06,
+        "caida_pct": 3.39,
+        "limite_recomendado_pct": 3.0,
+        "excede_limite": true
+      },
+      "calibre_por_caida": {
+        "calibre": "6",
+        "material": "cobre",
+        "longitud_m": 40.0,
+        "corriente_A": 34.61538461538461,
+        "resistencia_ohm": 0.0644,
+        "caida_V": 4.46,
+        "caida_pct": 2.14,
+        "limite_recomendado_pct": 3.0
+      },
+      "calibre_final": "6",
+      "alerta": "Caida 3.39% > 3.0%. Se aumenta a 6 (2.14%). Aplicar 250.122(B): aumentar el EGC proporcionalmente."
+    }
+  ],
+  "balanceo": {
+    "arreglo": "Barras Square D: nones a la izquierda, pares a la derecha; renglones 1-2 fase A, 3-4 fase B, 5-6 fase C y se repite (NEC 408.3(E)). 1 polo: toda la carga en su fase; 2 polos: mitad en cada fase; 3 polos: un tercio en cada fase.",
+    "criterio": "Objetivo de proyecto: desbalance <= 5% por tablero. Por encima de 10%, redistribuir.",
+    "tableros": [
+      {
+        "tablero": "TD-1",
+        "fases_tablero": 3,
+        "va_por_fase": {
+          "A": 31700.0,
+          "B": 25500.0,
+          "C": 25500.0
+        },
+        "va_total": 82700.0,
+        "desbalance_pct": 22.49,
+        "espacios_usados": 13,
+        "cedula": [
+          {
+            "circuito": "C-04",
+            "nombre": "Alumbrado nave LED",
+            "polos": 1,
+            "conexion": "fase-neutro",
+            "posiciones": [
+              1
+            ],
+            "fases": [
+              "A"
+            ],
+            "va": 6200.0,
+            "va_por_fase": {
+              "A": 6200.0
+            }
+          },
+          {
+            "circuito": "C-01",
+            "nombre": "Horno rotatorio principal",
+            "polos": 3,
+            "conexion": "trifasica",
+            "posiciones": [
+              2,
+              4,
+              6
+            ],
+            "fases": [
+              "A",
+              "B",
+              "C"
+            ],
+            "va": 45000.0,
+            "va_por_fase": {
+              "A": 15000.0,
+              "B": 15000.0,
+              "C": 15000.0
+            }
+          },
+          {
+            "circuito": "C-02",
+            "nombre": "Amasadora 15 HP",
+            "polos": 3,
+            "conexion": "trifasica",
+            "posiciones": [
+              3,
+              5,
+              7
+            ],
+            "fases": [
+              "B",
+              "C",
+              "A"
+            ],
+            "va": 14000.0,
+            "va_por_fase": {
+              "B": 4666.7,
+              "C": 4666.7,
+              "A": 4666.7
+            }
+          },
+          {
+            "circuito": "C-03",
+            "nombre": "Camara de fermentacion",
+            "polos": 3,
+            "conexion": "trifasica",
+            "posiciones": [
+              8,
+              10,
+              12
+            ],
+            "fases": [
+              "A",
+              "B",
+              "C"
+            ],
+            "va": 9000.0,
+            "va_por_fase": {
+              "A": 3000.0,
+              "B": 3000.0,
+              "C": 3000.0
+            }
+          },
+          {
+            "circuito": "C-06",
+            "nombre": "Compresor de aire 10 HP",
+            "polos": 3,
+            "conexion": "trifasica",
+            "posiciones": [
+              9,
+              11,
+              13
+            ],
+            "fases": [
+              "B",
+              "C",
+              "A"
+            ],
+            "va": 8500.0,
+            "va_por_fase": {
+              "B": 2833.3,
+              "C": 2833.3,
+              "A": 2833.3
+            }
+          }
+        ],
+        "avisos": []
+      },
+      {
+        "tablero": "TD-2",
+        "fases_tablero": 3,
+        "va_por_fase": {
+          "A": 9350.0,
+          "B": 8450.0,
+          "C": 6300.0
+        },
+        "va_total": 24100.0,
+        "desbalance_pct": 37.97,
+        "espacios_usados": 8,
+        "cedula": [
+          {
+            "circuito": "C-07",
+            "nombre": "Cargador VE nivel 2",
+            "polos": 2,
+            "conexion": "fase-fase",
+            "posiciones": [
+              2,
+              4
+            ],
+            "fases": [
+              "A",
+              "B"
+            ],
+            "va": 11500.0,
+            "va_por_fase": {
+              "A": 5750.0,
+              "B": 5750.0
+            }
+          },
+          {
+            "circuito": "C-05",
+            "nombre": "Contactos generales area produccion",
+            "polos": 2,
+            "conexion": "fase-fase",
+            "posiciones": [
+              3,
+              5
+            ],
+            "fases": [
+              "B",
+              "C"
+            ],
+            "va": 5400.0,
+            "va_por_fase": {
+              "B": 2700.0,
+              "C": 2700.0
+            }
+          },
+          {
+            "circuito": "C-08",
+            "nombre": "Aire acondicionado oficinas",
+            "polos": 2,
+            "conexion": "fase-fase",
+            "posiciones": [
+              6,
+              8
+            ],
+            "fases": [
+              "C",
+              "A"
+            ],
+            "va": 7200.0,
+            "va_por_fase": {
+              "C": 3600.0,
+              "A": 3600.0
+            }
+          }
+        ],
+        "avisos": []
+      }
+    ]
+  }
+}

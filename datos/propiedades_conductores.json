@@ -1,0 +1,19 @@
+{
+  "_fuente": "Resistencia CD aproximada a 75 C, conductor de cobre y aluminio cableado - NEC Capitulo 9 Tabla 8. Equivalencias AWG-mm2 segun practica NOM-001-SEDE.",
+  "_uso": "Calculo de caida de tension. Para cargas con factor de potencia bajo o corridas largas en canalizacion metalica, usar impedancia efectiva (Cap. 9 Tabla 9) en lugar de resistencia CD.",
+  "resistencia_ohm_por_km_75C": {
+    "cobre": {"14": 10.3, "12": 6.50, "10": 4.07, "8": 2.55, "6": 1.61, "4": 1.01, "3": 0.803, "2": 0.636, "1": 0.505, "1/0": 0.400, "2/0": 0.317, "3/0": 0.251, "4/0": 0.199, "250": 0.169, "300": 0.141, "350": 0.120, "400": 0.105, "500": 0.0845, "600": 0.0702, "750": 0.0561},
+    "aluminio": {"12": 10.7, "10": 6.69, "8": 4.20, "6": 2.65, "4": 1.67, "3": 1.32, "2": 1.05, "1": 0.830, "1/0": 0.660, "2/0": 0.521, "3/0": 0.413, "4/0": 0.328, "250": 0.278, "300": 0.232, "350": 0.198, "400": 0.174, "500": 0.139, "600": 0.116, "750": 0.0925}
+  },
+  "equivalencia_awg_mm2": {
+    "14": 2.08, "12": 3.31, "10": 5.26, "8": 8.37, "6": 13.3, "4": 21.2, "3": 26.7, "2": 33.6, "1": 42.4,
+    "1/0": 53.5, "2/0": 67.4, "3/0": 85.0, "4/0": 107.2, "250": 127, "300": 152, "350": 177, "400": 203, "500": 253, "600": 304, "750": 380
+  },
+  "orden_calibres": ["14","12","10","8","6","4","3","2","1","1/0","2/0","3/0","4/0","250","300","350","400","500","600","750"],
+  "limites_caida_tension": {
+    "_fuente": "NEC 210.19(A) IN y 215.2(A)(2) IN son informativas (recomendacion). NOM-001-SEDE los maneja como criterio de proyecto.",
+    "circuito_derivado_recomendado_pct": 3.0,
+    "alimentador_recomendado_pct": 2.0,
+    "total_recomendado_pct": 5.0
+  }
+}

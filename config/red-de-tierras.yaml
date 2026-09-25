@@ -1,0 +1,48 @@
+# Diseño de la red de tierras (malla) de la subestacion — IEEE Std 80, suelo uniforme.
+# Entrada separada del resto del proyecto. Llenarla por subestacion.
+# Los campos OBLIGATORIO no se suponen: si faltan, el script se detiene y pide el dato.
+# [CRITERIO] = decision de proyecto con valor sugerido; cambiarlo si el proyecto lo pide.
+
+proyecto: ""
+subestacion: ""                 # p. ej. "Subestacion 300 kVA, 13.8 kV"
+
+terreno:
+  resistividad_ohm_m: null      # OBLIGATORIO. Medicion Wenner (IEEE Std 81), modelo de suelo uniforme
+  fuente: ""                    # Informe de medicion y fecha
+
+suministrador:
+  tension_kV: null              # OBLIGATORIO. Tension nominal en el punto de entrega (13.8, 23, 34.5...)
+  mva_cc_3f: null               # OBLIGATORIO. Potencia de cortocircuito trifasica en el punto de entrega (MVA)
+  mva_cc_1f: null               # Potencia de cortocircuito monofasica (MVA). Si falta se usa la trifasica y se avisa
+  x_r: null                     # Relacion X/R en el punto de entrega. Si falta, Df = 1 y se avisa
+  frecuencia_Hz: 60
+  fuente: ""                    # Oficio del suministrador (CFE / utility) y fecha
+
+falla:
+  tiempo_choque_s: 0.5          # ts [CRITERIO]: liberacion de la proteccion; define las tensiones tolerables
+  tiempo_conductor_s: 0.5       # tc [CRITERIO]: tiempo para dimensionar el conductor (usar el de respaldo)
+  factor_division_Sf: 1.0       # Sf [CRITERIO]: fraccion de la corriente que entra a la malla; 1.0 es conservador
+
+malla:
+  largo_m: null                 # OBLIGATORIO. Lx
+  ancho_m: null                 # OBLIGATORIO. Ly
+  separacion_m: null            # OBLIGATORIO. D, separacion entre conductores paralelos
+  profundidad_m: 0.6            # h [CRITERIO]
+  calibre: "4/0"                # Conductor de la malla, AWG o kcmil [CRITERIO]
+  material: cobre_duro          # cobre_suave | cobre_duro | acero_cobre_40 | acero_cobre_30 (IEEE 80 Tabla 1)
+  temperatura_ambiente_C: 40    # Ta [CRITERIO] para dimensionar el conductor
+  temperatura_maxima_C: null    # Tm. Vacio = fusion del material (uniones exotermicas). Con conectores mecanicos, dato del fabricante
+
+varillas:
+  cantidad: 0
+  longitud_m: 3.05              # Lr
+  en_perimetro: true            # true si estan en el perimetro o en las esquinas
+
+capa_superficial:
+  resistividad_ohm_m: 3000      # rho_s [CRITERIO], grava triturada. Vacio = sin capa superficial
+  espesor_m: 0.10               # hs [CRITERIO]
+
+persona:
+  peso_kg: 50                   # 50 o 70 [CRITERIO]; 50 kg es mas conservador
+
+resistencia_objetivo_ohm: null  # Valor que exija la norma o el suministrador. Vacio = no se verifica

@@ -1,0 +1,36 @@
+{
+  "_fuente": "NEC Tabla 250.66 (conductor del electrodo de puesta a tierra) y Tabla 250.122 (conductor de puesta a tierra de equipos)",
+  "_ADVERTENCIA": "Verificar contra edicion vigente. 250.122(B) exige aumentar proporcionalmente el EGC cuando los conductores de fase se aumentan de calibre (p.ej. por caida de tension).",
+  "tabla_250_66_GEC": [
+    {"fase_cu_hasta": "2",   "fase_al_hasta": "1/0", "gec_cu": "8",   "gec_al": "6"},
+    {"fase_cu_hasta": "1/0", "fase_al_hasta": "3/0", "gec_cu": "6",   "gec_al": "4"},
+    {"fase_cu_hasta": "3/0", "fase_al_hasta": "250", "gec_cu": "4",   "gec_al": "2"},
+    {"fase_cu_hasta": "350", "fase_al_hasta": "500", "gec_cu": "2",   "gec_al": "1/0"},
+    {"fase_cu_hasta": "600", "fase_al_hasta": "900", "gec_cu": "1/0", "gec_al": "3/0"},
+    {"fase_cu_hasta": "1100","fase_al_hasta": "1750","gec_cu": "2/0", "gec_al": "4/0"},
+    {"fase_cu_hasta": "MAYOR","fase_al_hasta": "MAYOR","gec_cu": "3/0","gec_al": "250"}
+  ],
+  "tabla_250_122_EGC": [
+    {"ocpd_A": 15,   "egc_cu": "14",  "egc_al": "12"},
+    {"ocpd_A": 20,   "egc_cu": "12",  "egc_al": "10"},
+    {"ocpd_A": 60,   "egc_cu": "10",  "egc_al": "8"},
+    {"ocpd_A": 100,  "egc_cu": "8",   "egc_al": "6"},
+    {"ocpd_A": 200,  "egc_cu": "6",   "egc_al": "4"},
+    {"ocpd_A": 300,  "egc_cu": "4",   "egc_al": "2"},
+    {"ocpd_A": 400,  "egc_cu": "3",   "egc_al": "1"},
+    {"ocpd_A": 500,  "egc_cu": "2",   "egc_al": "1/0"},
+    {"ocpd_A": 600,  "egc_cu": "1",   "egc_al": "2/0"},
+    {"ocpd_A": 800,  "egc_cu": "1/0", "egc_al": "3/0"},
+    {"ocpd_A": 1000, "egc_cu": "2/0", "egc_al": "4/0"},
+    {"ocpd_A": 1200, "egc_cu": "3/0", "egc_al": "250"},
+    {"ocpd_A": 1600, "egc_cu": "4/0", "egc_al": "350"},
+    {"ocpd_A": 2000, "egc_cu": "250", "egc_al": "400"},
+    {"ocpd_A": 2500, "egc_cu": "350", "egc_al": "600"},
+    {"ocpd_A": 3000, "egc_cu": "400", "egc_al": "600"},
+    {"ocpd_A": 4000, "egc_cu": "500", "egc_al": "750"},
+    {"ocpd_A": 5000, "egc_cu": "700", "egc_al": "1200"},
+    {"ocpd_A": 6000, "egc_cu": "800", "egc_al": "1200"}
+  ],
+  "_nota_250_102": "El puente de union principal y los conductores del lado de suministro se dimensionan con 250.102(C), no con 250.122.",
+  "_nota_electrodos": "Un electrodo de varilla unico NO puede ser el unico electrodo si su resistencia excede 25 ohm (250.53(A)(2)); en ese caso se requiere un electrodo adicional. La medicion de resistencia de tierra es un dato de campo, no un supuesto."
+}

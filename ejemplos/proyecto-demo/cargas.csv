@@ -1,0 +1,9 @@
+id,nombre,va,tension,fases,fase,continua,longitud_m,n_conductores,material,tablero
+C-01,Horno rotatorio principal,45000,480,3,,si,62,3,cobre,TD-1
+C-02,Amasadora 15 HP,14000,480,3,,no,38,3,cobre,TD-1
+C-03,Camara de fermentacion,9000,480,3,,si,25,3,cobre,TD-1
+C-04,Alumbrado nave LED,6200,277,1,A,si,95,3,cobre,TD-1
+C-05,Contactos generales area produccion,5400,208,2,BC,no,45,4,cobre,TD-2
+C-06,Compresor de aire 10 HP,8500,480,3,,no,55,3,cobre,TD-1
+C-07,Cargador VE nivel 2,11500,208,2,,si,72,3,cobre,TD-2
+C-08,Aire acondicionado oficinas,7200,208,2,,si,40,3,cobre,TD-2

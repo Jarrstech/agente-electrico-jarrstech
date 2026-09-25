@@ -1,0 +1,15 @@
+proyecto: ""
+cliente: ""
+ubicacion: ""
+tipo_instalacion: ""          # industrial | comercial | residencial | mixto
+revision: "A"
+fecha: ""
+responsable_calculo: ""
+revisor: ""
+responsable_tecnico: ""       # Quien firma. Debe tener licencia vigente.
+numero_licencia: ""
+
+alcance_incluye: []
+alcance_no_incluye: []
+
+supuestos_pendientes_de_confirmar: []

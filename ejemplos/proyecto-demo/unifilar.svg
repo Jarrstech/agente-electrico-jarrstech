@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1470 420" width="1470" height="420" font-family="Helvetica,Arial,sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="30" y="34" font-size="17" font-weight="bold">Panificadora Demo - Ampliacion tablero general</text>
+<text x="30" y="52" font-size="11" fill="#555">NOM-001-SEDE (edicion declarada en config/jurisdiccion.yaml) | Icc disp: 22 kA | Rev A</text>
+<path d="M250,171 H270 V171 H290" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M480,171 H500 V171 H520" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="505" y="165" font-size="10" fill="#0b5">400A / 2x500 / PT 3</text>
+<path d="M710,171 H730 V91 H750" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="735" y="85" font-size="10" fill="#0b5">225A / 4/0 / PT 4</text>
+<path d="M710,171 H730 V91 H750" stroke="#222" stroke-width="1.6" fill="none"/>
+<path d="M940,91 H960 V91 H980" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="965" y="85" font-size="10" fill="#0b5">225A / 4/0 / PT 4</text>
+<path d="M1170,91 H1190 V91 H1210" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="1195" y="85" font-size="10" fill="#0b5">70A / 2 / PT 6</text>
+<path d="M710,171 H730 V331 H750" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="735" y="325" font-size="10" fill="#0b5">100A / 1 / PT 6</text>
+<path d="M940,91 H960 V91 H980" stroke="#222" stroke-width="1.6" fill="none"/>
+<text x="965" y="85" font-size="10" fill="#0b5">70A / 4 / PT 8</text>
+<rect x="60" y="140" width="190" height="62" rx="5" fill="#eef4ff" stroke="#333" stroke-width="1.4"/>
+<text x="68" y="157" font-size="11" font-weight="bold">ACOM ACOM</text>
+<text x="68" y="172" font-size="9.5" fill="#333">Acometida CFE media tension</text>
+<text x="68" y="186" font-size="9" fill="#555">13800V 3F-3H</text>
+<rect x="290" y="140" width="190" height="62" rx="5" fill="#fff4e6" stroke="#333" stroke-width="1.4"/>
+<text x="298" y="157" font-size="11" font-weight="bold">TR TR-1</text>
+<text x="298" y="172" font-size="9.5" fill="#333">Transformador 300 kVA</text>
+<text x="298" y="186" font-size="9" fill="#555">480V 3F-4H</text>
+<text x="298" y="198" font-size="8.5" fill="#777">SCCR 65kA</text>
+<rect x="520" y="140" width="190" height="62" rx="5" fill="#eefaf1" stroke="#333" stroke-width="1.4"/>
+<text x="528" y="157" font-size="11" font-weight="bold">TAB TG-1</text>
+<text x="528" y="172" font-size="9.5" fill="#333">Tablero general 480V</text>
+<text x="528" y="186" font-size="9" fill="#555">480V 3F-4H</text>
+<text x="528" y="198" font-size="8.5" fill="#777">SCCR 65kA</text>
+<rect x="750" y="60" width="190" height="62" rx="5" fill="#eefaf1" stroke="#333" stroke-width="1.4"/>
+<text x="758" y="77" font-size="11" font-weight="bold">TAB TD-1</text>
+<text x="758" y="92" font-size="9.5" fill="#333">Tablero produccion</text>
+<text x="758" y="106" font-size="9" fill="#555">480V 3F-4H  82,700VA</text>
+<text x="758" y="118" font-size="8.5" fill="#777">SCCR 42kA</text>
+<rect x="750" y="60" width="190" height="62" rx="5" fill="#fff4e6" stroke="#333" stroke-width="1.4"/>
+<text x="758" y="77" font-size="11" font-weight="bold">TR TR-2</text>
+<text x="758" y="92" font-size="9.5" fill="#333">Transformador seco 75 kVA</text>
+<text x="758" y="106" font-size="9" fill="#555">208V 3F-4H</text>
+<text x="758" y="118" font-size="8.5" fill="#777">SCCR 22kA</text>
+<rect x="980" y="60" width="190" height="62" rx="5" fill="#eefaf1" stroke="#333" stroke-width="1.4"/>
+<text x="988" y="77" font-size="11" font-weight="bold">TAB TD-2</text>
+<text x="988" y="92" font-size="9.5" fill="#333">Tablero servicios 208/120V</text>
+<text x="988" y="106" font-size="9" fill="#555">208V 3F-4H  24,100VA</text>
+<text x="988" y="118" font-size="8.5" fill="#777">SCCR 22kA</text>
+<rect x="1210" y="60" width="190" height="62" rx="5" fill="#e6fbff" stroke="#333" stroke-width="1.4"/>
+<text x="1218" y="77" font-size="11" font-weight="bold">EVSE EVSE-1</text>
+<text x="1218" y="92" font-size="9.5" fill="#333">Cargador VE nivel 2</text>
+<text x="1218" y="106" font-size="9" fill="#555">208V 2F-2H  11,500VA</text>
+<rect x="750" y="300" width="190" height="62" rx="5" fill="#f3eeff" stroke="#333" stroke-width="1.4"/>
+<text x="758" y="317" font-size="11" font-weight="bold">BESS BESS-1</text>
+<text x="758" y="332" font-size="9.5" fill="#333">BESS 100 kWh / 50 kW</text>
+<text x="758" y="346" font-size="9" fill="#555">480V 3F-4H</text>
+<text x="758" y="358" font-size="8.5" fill="#777">SCCR 65kA</text>
+<rect x="980" y="60" width="190" height="62" rx="5" fill="#f7f7f7" stroke="#333" stroke-width="1.4"/>
+<text x="988" y="77" font-size="11" font-weight="bold">M M-01</text>
+<text x="988" y="92" font-size="9.5" fill="#333">Horno rotatorio</text>
+<text x="988" y="106" font-size="9" fill="#555">480V 3F-3H  45,000VA</text>
+</svg>

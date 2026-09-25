@@ -1,0 +1,24 @@
+{
+  "_fuente": "IEEE Std 80-2000, IEEE Guide for Safety in AC Substation Grounding: Tabla 1 (constantes de materiales), corriente tolerable por el cuerpo (50 y 70 kg), factor Cs de capa superficial, resistencia de malla (Sverak), tensiones de malla y de paso, factor de decremento.",
+  "_ADVERTENCIA": "Verificar contra la edicion vigente (IEEE Std 80-2013) y la norma aplicable al proyecto antes de emitir. Si un material no esta aqui, pedir el dato; no estimarlo.",
+  "materiales": {
+    "cobre_suave": {"descripcion": "Cobre recocido, estirado suave", "conductividad_pct": 100.0, "alfa_r_20C": 0.00393, "K0_C": 234, "Tm_fusion_C": 1083, "rho_r_20C_microohm_cm": 1.72, "TCAP_J_cm3_C": 3.42},
+    "cobre_duro": {"descripcion": "Cobre comercial, estirado duro", "conductividad_pct": 97.0, "alfa_r_20C": 0.00381, "K0_C": 242, "Tm_fusion_C": 1084, "rho_r_20C_microohm_cm": 1.78, "TCAP_J_cm3_C": 3.42},
+    "acero_cobre_40": {"descripcion": "Alambre de acero recubierto de cobre, 40 %", "conductividad_pct": 40.0, "alfa_r_20C": 0.00378, "K0_C": 245, "Tm_fusion_C": 1084, "rho_r_20C_microohm_cm": 4.40, "TCAP_J_cm3_C": 3.85},
+    "acero_cobre_30": {"descripcion": "Alambre de acero recubierto de cobre, 30 %", "conductividad_pct": 30.0, "alfa_r_20C": 0.00378, "K0_C": 245, "Tm_fusion_C": 1084, "rho_r_20C_microohm_cm": 5.86, "TCAP_J_cm3_C": 3.85},
+    "varilla_acero_cobre_20": {"descripcion": "Varilla de acero recubierta de cobre, 20 %", "conductividad_pct": 20.0, "alfa_r_20C": 0.00378, "K0_C": 245, "Tm_fusion_C": 1084, "rho_r_20C_microohm_cm": 8.62, "TCAP_J_cm3_C": 3.85},
+    "aluminio_ec": {"descripcion": "Aluminio grado EC", "conductividad_pct": 61.0, "alfa_r_20C": 0.00403, "K0_C": 228, "Tm_fusion_C": 657, "rho_r_20C_microohm_cm": 2.86, "TCAP_J_cm3_C": 2.56},
+    "aluminio_5005": {"descripcion": "Aluminio, aleacion 5005", "conductividad_pct": 53.5, "alfa_r_20C": 0.00353, "K0_C": 263, "Tm_fusion_C": 652, "rho_r_20C_microohm_cm": 3.22, "TCAP_J_cm3_C": 2.60},
+    "aluminio_6201": {"descripcion": "Aluminio, aleacion 6201", "conductividad_pct": 52.5, "alfa_r_20C": 0.00347, "K0_C": 268, "Tm_fusion_C": 654, "rho_r_20C_microohm_cm": 3.28, "TCAP_J_cm3_C": 2.60},
+    "acero_aluminio": {"descripcion": "Alambre de acero recubierto de aluminio", "conductividad_pct": 20.3, "alfa_r_20C": 0.00360, "K0_C": 258, "Tm_fusion_C": 657, "rho_r_20C_microohm_cm": 8.48, "TCAP_J_cm3_C": 3.58},
+    "acero_1020": {"descripcion": "Acero 1020", "conductividad_pct": 10.8, "alfa_r_20C": 0.00160, "K0_C": 605, "Tm_fusion_C": 1510, "rho_r_20C_microohm_cm": 15.90, "TCAP_J_cm3_C": 3.28},
+    "varilla_acero_inoxidable_recubierta": {"descripcion": "Varilla de acero recubierta de acero inoxidable", "conductividad_pct": 9.8, "alfa_r_20C": 0.00160, "K0_C": 605, "Tm_fusion_C": 1400, "rho_r_20C_microohm_cm": 17.50, "TCAP_J_cm3_C": 4.44},
+    "varilla_acero_galvanizado": {"descripcion": "Varilla de acero galvanizado", "conductividad_pct": 8.6, "alfa_r_20C": 0.00320, "K0_C": 293, "Tm_fusion_C": 419, "rho_r_20C_microohm_cm": 20.10, "TCAP_J_cm3_C": 3.93},
+    "acero_inoxidable_304": {"descripcion": "Acero inoxidable 304", "conductividad_pct": 2.4, "alfa_r_20C": 0.00130, "K0_C": 749, "Tm_fusion_C": 1400, "rho_r_20C_microohm_cm": 72.00, "TCAP_J_cm3_C": 4.03}
+  },
+  "_nota_cobre_semiduro": "El cobre semiduro no esta en la Tabla 1. Usar cobre_duro, que pide una seccion ligeramente mayor (conservador).",
+  "corriente_cuerpo_k": {"50": 0.116, "70": 0.157},
+  "_nota_cuerpo": "Etoque = (1000 + 1.5 Cs rho_s) k / raiz(ts); Epaso = (1000 + 6 Cs rho_s) k / raiz(ts). k = 0.116 para 50 kg y 0.157 para 70 kg.",
+  "limites_validez": {"n_max": 25, "h_min_m": 0.25, "h_max_m": 2.5, "d_max_sobre_h": 0.25, "D_min_m": 2.5},
+  "_nota_limites": "Rango de validez de las ecuaciones simplificadas de tension de malla (Em) y de paso (Es)."
+}

@@ -1,0 +1,137 @@
+{
+  "norma": "IEEE Std 80-2000, suelo uniforme",
+  "proyecto": "Panificadora Demo - Ampliacion tablero general",
+  "subestacion": "Subestacion 300 kVA, 13.8 kV (TR-1)",
+  "entradas": {
+    "resistividad_ohm_m": 50.0,
+    "fuente_resistividad": "Dato de ejemplo",
+    "tension_kV": 13.8,
+    "mva_cc_3f": 525.8,
+    "mva_cc_1f": 400,
+    "x_r": 10,
+    "frecuencia_Hz": 60.0,
+    "fuente_suministrador": "Dato de ejemplo",
+    "tiempo_choque_s": 0.5,
+    "tiempo_conductor_s": 0.5,
+    "factor_division_Sf": 0.2,
+    "material": "cobre_duro",
+    "temperatura_ambiente_C": 40.0,
+    "temperatura_maxima_C": 1084.0,
+    "calibre": "4/0",
+    "profundidad_m": 0.6,
+    "resistencia_objetivo_ohm": null
+  },
+  "corriente_falla": {
+    "icc_3f_A": 21998.0,
+    "corriente_falla_tierra_A": 16735.0,
+    "origen": "monofasica del suministrador",
+    "Df_ts": 1.0262,
+    "Df_tc": 1.0262,
+    "Sf": 0.2,
+    "IG_A": 3435.0,
+    "I_conductor_A": 17173.0
+  },
+  "conductor": {
+    "material": "Cobre comercial, estirado duro",
+    "Tm_C": 1084.0,
+    "Ta_C": 40.0,
+    "tc_s": 0.5,
+    "area_minima_mm2": 43.5,
+    "calibre_minimo": "1/0",
+    "calibre_elegido": "4/0",
+    "area_elegida_mm2": 107.2,
+    "diametro_m": 0.0117
+  },
+  "tolerables": {
+    "Cs": 0.7731,
+    "rho_s_ohm_m": 3000.0,
+    "peso_kg": 50,
+    "ts_s": 0.5,
+    "E_toque_V": 735.0,
+    "E_paso_V": 2447.0
+  },
+  "malla": {
+    "largo_m": 20.0,
+    "ancho_m": 15.0,
+    "separacion_m": 5.0,
+    "conductores_largo": 4,
+    "conductores_ancho": 5,
+    "varillas": 4,
+    "longitud_varilla_m": 3.05,
+    "varillas_en_perimetro": true,
+    "LC_m": 155.0,
+    "LR_m": 12.2,
+    "LT_m": 167.2,
+    "area_m2": 300.0,
+    "n": 4.451,
+    "Ki": 1.303,
+    "Kh": 1.265,
+    "Kii": 1.0,
+    "Km": 0.7612,
+    "Ks": 0.3741,
+    "LM_m": 175.7,
+    "LS_m": 126.6,
+    "Rg_ohm": 1.503,
+    "GPR_V": 5164.0,
+    "Em_V": 969.0,
+    "Es_V": 661.0
+  },
+  "verificacion": [
+    {
+      "criterio": "Sección del conductor",
+      "calculado": "107.2 mm² (4/0)",
+      "limite": ">= 43.5 mm²",
+      "resultado": "CUMPLE"
+    },
+    {
+      "criterio": "Tensión de malla Em contra toque tolerable",
+      "calculado": "969 V",
+      "limite": "<= 735 V",
+      "resultado": "NO CUMPLE"
+    },
+    {
+      "criterio": "Tensión de paso Es contra paso tolerable",
+      "calculado": "661 V",
+      "limite": "<= 2447 V",
+      "resultado": "CUMPLE"
+    },
+    {
+      "criterio": "Elevación de potencial GPR contra toque tolerable",
+      "calculado": "5164 V",
+      "limite": "<= 735 V",
+      "resultado": "NO CUMPLE (revisar Em y Es)"
+    }
+  ],
+  "cumple": false,
+  "sugerencia": {
+    "largo_m": 20.0,
+    "ancho_m": 15.0,
+    "separacion_m": 3.17,
+    "conductores_largo": 6,
+    "conductores_ancho": 7,
+    "varillas": 4,
+    "longitud_varilla_m": 3.05,
+    "varillas_en_perimetro": true,
+    "LC_m": 225.0,
+    "LR_m": 12.2,
+    "LT_m": 237.2,
+    "area_m2": 300.0,
+    "n": 6.462,
+    "Ki": 1.6,
+    "Kh": 1.265,
+    "Kii": 1.0,
+    "Km": 0.5934,
+    "Ks": 0.4457,
+    "LM_m": 245.7,
+    "LS_m": 179.1,
+    "Rg_ohm": 1.415,
+    "GPR_V": 4861.0,
+    "Em_V": 664.0,
+    "Es_V": 684.0
+  },
+  "recomendaciones": [],
+  "criterios": [
+    "Sf = 0.2: requiere justificacion (estudio de division de corriente)."
+  ],
+  "avisos": []
+}

@@ -1,0 +1,11 @@
+# Proyectos reales capturados con la interfaz: datos de clientes, no se versionan aquí.
+proyectos/
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,46 @@
+# Jurisdiccion y edicion normativa del proyecto.
+# EL AGENTE NO CALCULA SIN ESTO. Llenarlo al abrir cada proyecto.
+
+jurisdiccion: mexico          # mexico | texas
+
+texas:
+  norma_base: "NFPA 70 (National Electrical Code)"
+  edicion: "2023"             # VERIFICAR: TDLR anuncio la adopcion del NEC 2026
+                              # con efecto 1-sep-2026. Confirmar cual rige segun
+                              # la fecha de inicio de obra. Fuente: tdlr.texas.gov
+  autoridad_estatal: "Texas Department of Licensing and Regulation (TDLR)"
+  ahj_municipal: ""           # Municipio. Puede tener enmiendas locales. CONFIRMAR.
+  enmiendas_locales: ""       # Documentar cuales aplican
+  unidades: "AWG/kcmil, pies, F"
+  licencia_requerida: "Contratista electrico licenciado por TDLR para trabajo no exento"
+
+mexico:
+  norma_base: "NOM-001-SEDE, Instalaciones Electricas (utilizacion)"
+  edicion: ""                 # OBLIGATORIO CONFIRMAR en DOF y en el Catalogo
+                              # Nacional de Normas antes de calcular. Existen
+                              # fuentes publicas contradictorias sobre cual es la
+                              # edicion vigente. No asumir.
+  fecha_verificacion_edicion: ""
+  fuente_consultada: ""
+  unidad_verificacion: ""     # UVIE acreditada que emitira el dictamen
+  unidades: "mm2 y AWG, metros, C"
+
+# Datos del sitio que NO se asumen
+sitio:
+  icc_disponible_kA: null     # De la compania suministradora o del calculo
+  fuente_icc: ""
+  temperatura_ambiente_C: null
+  temperatura_terminales_C: 75
+  altitud_msnm: null
+  area_clasificada: false
+  clasificacion: ""
+
+# Criterios de proyecto (NO son requisitos normativos: son decisiones)
+criterios:
+  caida_tension_derivado_pct: 3.0
+  caida_tension_alimentador_pct: 2.0
+  caida_tension_total_pct: 5.0
+  margen_crecimiento_pct: 25
+  desbalance_maximo_pct: 5
+  material_conductor: cobre
+  temp_aislamiento_C: 90

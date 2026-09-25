@@ -1,0 +1,13 @@
+{
+  "_fuente": "Metodo del bus infinito: la red del suministrador se modela con impedancia cero en el primario del transformador; en el secundario Icc = kVA x 1000 / (raiz(3) x V x Z%/100). Aporte de motores: Eaton Bussmann, 'Short-Circuit Current Calculations', metodo punto a punto.",
+  "_url_aporte_motores": "https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/fuses/solution-center/bus-ele-tech-lib-short-circuit-current-calculations.pdf",
+  "_ADVERTENCIA": "Calculo conservador para verificar capacidad interruptiva y SCCR. No sustituye un estudio de cortocircuito con la impedancia real del suministrador, reactancia de cables y aportes de generacion.",
+  "aporte_motores_factor": 4,
+  "_nota_aporte_motores": "Bussmann: 'A practical estimate of motor short circuit contribution is to multiply the total motor current in amps by 4. Values of 4 to 6 are commonly accepted.' Es criterio de proyecto; se puede cambiar con --aporte-motores.",
+  "temperatura_conductor_C": 25,
+  "_nota_temperatura": "Para obtener la corriente maxima, la resistencia de conductores se refiere a 25 C desde la resistencia a 75 C de propiedades_conductores.json.",
+  "constante_temperatura_resistencia_C": {"cobre": 234.5, "aluminio": 228.1},
+  "_nota_constantes": "R(t2) = R(t1) x (T + t2) / (T + t1), con T = 234.5 C para cobre y 228.1 C para aluminio.",
+  "tolerancia_tension_pct": 5,
+  "_nota_tolerancia": "Diferencia maxima entre la tension declarada de un nodo y la del sistema antes de emitir un aviso."
+}

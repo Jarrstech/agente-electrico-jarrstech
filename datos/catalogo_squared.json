@@ -1,0 +1,134 @@
+{
+  "_marca": "Square D (Schneider Electric)",
+  "_fecha_consulta": "2026-09-23",
+  "_ADVERTENCIA": "Datos de catalogo de referencia. Confirmar numero de catalogo, disponibilidad (Mexico / EE. UU.) y capacidades con el distribuidor o el catalogo vigente de Schneider Electric antes de cotizar. La seleccion usa interruptores totalmente clasificados (sin combinaciones en serie). Los valores marcados en '_verificar' vienen de fuentes secundarias.",
+  "arreglo_barras": {
+    "descripcion": "Numeracion non-par: circuitos nones a la izquierda y pares a la derecha; renglones 1-2 fase A, 3-4 fase B, 5-6 fase C (NEC 408.3(E)).",
+    "_fuente": "https://www.rexelusa.com/p/148089/square-d/panel-board-nq-type-numbering-strip-1-102-odd-even/785901500520/nq102oe"
+  },
+  "tableros": {
+    "NQ": {
+      "descripcion": "Tablero de alumbrado y distribucion NQ",
+      "tension_max_V": 240,
+      "sistemas": ["3F-4H", "1F-3H"],
+      "barras_A": [100, 225, 400, 600],
+      "principales_A": [100, 225, 400, 600],
+      "derivados": ["QOB", "QOB-VH", "QHB"],
+      "numeracion": "non-par",
+      "_fuente": [
+        "https://www.se.com/us/en/product/NQ442L6C/panelboard-interior-nq-main-lugs-600a-cu-bus-42-pole-spaces-3-phase-4-wire-240vac-48vdc/",
+        "https://productinfo.se.com/nadigest/5c51d645347bdf0001f1f280/Master/17709_MAIN%20(bookmap)_0000061751.xml/$/QOBCircuitBreakersForNQPanelboards-36AA2991"
+      ]
+    },
+    "NF": {
+      "descripcion": "Tablero de alumbrado y distribucion NF",
+      "tension_max_V": 480,
+      "sistemas": ["3F-4H"],
+      "nota_sistema": "480Y/277 Vac: requiere estrella con neutro",
+      "barras_A": [125, 250, 400, 600, 800],
+      "principal_max_A": 600,
+      "derivado_max_A": 125,
+      "derivados": ["EDB", "EGB", "EJB"],
+      "numeracion": "non-par",
+      "_fuente": [
+        "https://www.se.com/us/en/product-range/7266-nf-panelboards/",
+        "https://media.distributordatasolutions.com/schneider/2018q1/1cea1a2275af89e3d34cb5a1948efe0c3e97091a.pdf"
+      ],
+      "_verificar": "Pasos intermedios de barras (125-800 A segun se.com) y principal maximo de 600 A"
+    },
+    "I-Line": {
+      "descripcion": "Tablero de distribucion de potencia I-Line (interior HCP)",
+      "tension_max_V": 600,
+      "sistemas": ["3F-4H", "3F-3H"],
+      "barras_max_A": 1200,
+      "principal_max_A": 1200,
+      "sccr_max_kA": 200,
+      "derivados": ["HD", "HG", "HJ", "HL", "JD", "JG", "JJ", "JL", "LG", "LJ"],
+      "numeracion": "sin numeracion non-par; posiciones por espacio de montaje",
+      "_fuente": [
+        "https://www.se.com/us/en/product-range/7269-square-d-iline-power-distribution-panelboards/",
+        "https://www.borderstates.com/All-Products/Power-Distribution-Protection/Load-Centers-Panelboards/Panelboards-Parts/Panelboard-Accessories/Panelboard-Interiors/Square-D-I-Line%E2%84%A2-HCP-Panelboard-Interiors/Square-D-I-Line%E2%84%A2-HCP-Panelboard-Interiors-3-Phase-1200-A-600-VAC-250-VDC/p/1526940"
+      ]
+    }
+  },
+  "interruptores": {
+    "QOB": {
+      "familia": "QO atornillable (bolt-on)",
+      "kA": {"240": 10},
+      "amperes_por_polos": {"1": [15, 70], "2": [15, 125], "3": [15, 100]},
+      "catalogo": "QOB{polos}{amperes}",
+      "_fuente": "https://www.toolgrit.com/guides/square-d-breaker-part-number-guide",
+      "_verificar": "Rangos de amperes por polo (fuente secundaria)"
+    },
+    "QOB-VH": {
+      "familia": "QO atornillable, alta capacidad interruptiva",
+      "kA": {"240": 22},
+      "amperes_por_polos": {"1": [15, 70], "2": [15, 125], "3": [15, 100]},
+      "catalogo": "QOB{polos}{amperes}VH",
+      "_fuente": "https://www.graybar.com/qob-miniature-circuit-breaker-high-interrupting-capacity-bolt-on-2-pole-20a-120-240-vac-22ka/p/88243089",
+      "_verificar": "Rangos de amperes por polo (fuente secundaria)"
+    },
+    "QHB": {
+      "familia": "QO atornillable, 65 kA",
+      "kA": {"240": 65},
+      "amperes_por_polos": {"1": [15, 30], "2": [15, 30], "3": [15, 30]},
+      "catalogo": "QHB{polos}{amperes}",
+      "_fuente": "https://www.se.com/us/en/product/QHB330/mini-circuit-breaker-qo-30a-3-pole-240vac-65ka-bolt-on/"
+    },
+    "EDB": {
+      "familia": "Marco E 125 A, nivel D",
+      "kA": {"240": 25, "480": 18},
+      "amperes_por_polos": {"1": [15, 70], "2": [15, 125], "3": [15, 125]},
+      "amperes": [15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 125],
+      "catalogo": "EDB{polos}4{amperes:03d}",
+      "_fuente": "https://rexel-cdn.com/Products/4D6BE595-8499-48ED-A8BF-AB35B45E3EDE/4D6BE595-8499-48ED-A8BF-AB35B45E3EDE.pdf"
+    },
+    "EGB": {
+      "familia": "Marco E 125 A, nivel G",
+      "kA": {"240": 65, "480": 35},
+      "amperes_por_polos": {"1": [15, 70], "2": [15, 125], "3": [15, 125]},
+      "amperes": [15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 125],
+      "catalogo": "EGB{polos}4{amperes:03d}",
+      "_fuente": "https://rexel-cdn.com/Products/4D6BE595-8499-48ED-A8BF-AB35B45E3EDE/4D6BE595-8499-48ED-A8BF-AB35B45E3EDE.pdf"
+    },
+    "EJB": {
+      "familia": "Marco E 125 A, nivel J",
+      "kA": {"240": 100, "480": 65},
+      "amperes_por_polos": {"1": [15, 70], "2": [15, 70], "3": [15, 70]},
+      "amperes": [15, 20, 25, 30, 35, 40, 45, 50, 60, 70],
+      "catalogo": "EJB{polos}4{amperes:03d}",
+      "_fuente": "https://rexel-cdn.com/Products/4D6BE595-8499-48ED-A8BF-AB35B45E3EDE/4D6BE595-8499-48ED-A8BF-AB35B45E3EDE.pdf"
+    },
+    "HD": {"familia": "PowerPact H, nivel D", "marco": "H", "kA": {"240": 25, "480": 18, "600": 14},
+           "amperes_por_polos": {"2": [15, 150], "3": [15, 150]}, "catalogo": "HDA{polos}6{amperes:03d}"},
+    "HG": {"familia": "PowerPact H, nivel G", "marco": "H", "kA": {"240": 65, "480": 35, "600": 18},
+           "amperes_por_polos": {"2": [15, 150], "3": [15, 150]}, "catalogo": "HGA{polos}6{amperes:03d}"},
+    "HJ": {"familia": "PowerPact H, nivel J", "marco": "H", "kA": {"240": 100, "480": 65, "600": 25},
+           "amperes_por_polos": {"2": [15, 150], "3": [15, 150]}, "catalogo": "HJA{polos}6{amperes:03d}"},
+    "HL": {"familia": "PowerPact H, nivel L", "marco": "H", "kA": {"240": 125, "480": 100, "600": 50},
+           "amperes_por_polos": {"2": [15, 150], "3": [15, 150]}, "catalogo": "HLA{polos}6{amperes:03d}"},
+    "JD": {"familia": "PowerPact J, nivel D", "marco": "J", "kA": {"240": 25, "480": 18, "600": 14},
+           "amperes_por_polos": {"2": [150, 250], "3": [150, 250]}, "catalogo": "JDA{polos}6{amperes:03d}"},
+    "JG": {"familia": "PowerPact J, nivel G", "marco": "J", "kA": {"240": 65, "480": 35, "600": 18},
+           "amperes_por_polos": {"2": [150, 250], "3": [150, 250]}, "catalogo": "JGA{polos}6{amperes:03d}"},
+    "JJ": {"familia": "PowerPact J, nivel J", "marco": "J", "kA": {"240": 100, "480": 65, "600": 25},
+           "amperes_por_polos": {"2": [150, 250], "3": [150, 250]}, "catalogo": "JJA{polos}6{amperes:03d}"},
+    "JL": {"familia": "PowerPact J, nivel L", "marco": "J", "kA": {"240": 125, "480": 100, "600": 50},
+           "amperes_por_polos": {"2": [150, 250], "3": [150, 250]}, "catalogo": "JLA{polos}6{amperes:03d}"},
+    "LG": {"familia": "PowerPact L, nivel G, disparo electronico MicroLogic", "marco": "L",
+           "kA": {"240": 65, "480": 35, "600": 18},
+           "amperes_por_polos": {"3": [250, 600]}, "sensores_A": [400, 600],
+           "catalogo": "LGA{polos}6{sensor:03d}U31X"},
+    "LJ": {"familia": "PowerPact L, nivel J, disparo electronico MicroLogic", "marco": "L",
+           "kA": {"240": 100, "480": 65, "600": 25},
+           "amperes_por_polos": {"3": [250, 600]}, "sensores_A": [400, 600],
+           "catalogo": "LJA{polos}6{sensor:03d}U31X"}
+  },
+  "_fuente_powerpact": [
+    "https://media.distributordatasolutions.com/schneider/2018q1/1cea1a2275af89e3d34cb5a1948efe0c3e97091a.pdf",
+    "https://www.se.com/us/en/product/HGA36100/circuit-breaker-powerpact-h-100a-3-pole-600vac-18ka-iline-thermal-magnetic-80-abc/",
+    "https://www.se.com/us/en/product-range/61214-powerpact-lframe-molded-case-circuit-breakers/",
+    "https://www.granitecityelectric.com/sqd-lja36400u31x-400a-600v-molded-case-circuit-breaker"
+  ],
+  "_nota_powerpact": "Niveles D/G/J/L de H y J segun el folleto Square D 0611HO0402. Formato de catalogo I-Line verificado con HGA36100 (marco H, nivel G, A = I-Line, 3 polos, 6 = 600 V, 100 A); en J y L se aplica el mismo formato: verificar. Marco L con disparo MicroLogic: el sufijo U31X (MicroLogic 3.3) es de referencia; se ajusta Ir a la corriente requerida."
+}
